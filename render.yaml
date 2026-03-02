@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: mylivepaiement-live-server
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: PORT
+        value: 3001
+      - key: ALLOWED_ORIGINS
+        value: https://mylivepaiement.com,https://mylivepaiement.vercel.app

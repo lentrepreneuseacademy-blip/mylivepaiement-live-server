@@ -1,0 +1,17 @@
+{
+  "name": "mylivepaiement-live-server",
+  "version": "1.0.0",
+  "description": "Serveur WebSocket pour la connexion aux lives TikTok — MY LIVE PAIEMENT",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "socket.io": "^4.7.5",
+    "tiktok-live-connector": "^1.1.8"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
